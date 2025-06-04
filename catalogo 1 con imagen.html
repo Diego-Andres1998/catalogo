@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios - IMPRESIONES DYG</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Definición de colores personalizados en Tailwind CSS */
+        :root {
+            --color-primary: #e82b87; /* Rosa/Magenta vibrante */
+            --color-secondary: #20b0e7; /* Azul brillante */
+            --color-accent: #f9c536; /* Amarillo/Naranja */
+        }
+
+        /* Configuración de Tailwind para usar las variables CSS */
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .border-primary { border-color: var(--color-primary); }
+
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .bg-accent { background-color: var(--color-accent); }
+        .text-accent { color: var(--color-accent); }
+        .border-accent { border-color: var(--color-accent); }
+
+        /* Fuente Inter para una estética moderna */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        /* Estilos para el scroll suave al hacer clic en los enlaces del menú */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para los títulos de sección */
+        .section-title {
+            @apply text-3xl md:text-4xl font-extrabold text-primary mb-6 border-b-4 border-accent pb-2 inline-block;
+        }
+        /* Estilo para los títulos de servicio/producto */
+        .service-title {
+            @apply text-xl md:text-2xl font-bold text-gray-900 mb-2;
+        }
+        /* Estilo para las descripciones */
+        .service-description {
+            @apply text-gray-700 text-base leading-relaxed;
+        }
+        /* Estilo para las listas de características */
+        .service-features {
+            @apply list-disc list-inside text-gray-600 text-sm mt-2 space-y-1;
+        }
+        /* Estilo para los iconos de redes sociales */
+        .social-icon {
+            width: 24px; /* Ajusta el tamaño según sea necesario */
+            height: 24px;
+            fill: currentColor; /* Permite que el color del icono cambie con el color del texto padre */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white py-8 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Logo de la empresa -->
+            <img src="logo_imprenta.png" alt="Logo de IMPRESIONES DYG" class="mx-auto mb-4 h-32 object-contain rounded-md shadow-md">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">IMPRESIONES DYG</h1>
+            <p class="text-xl md:text-2xl font-light">Catálogo de Servicios de Impresión</p>
+            <p class="mt-4 text-lg max-w-3xl mx-auto">
+                trabajamos contigo para entender tus requisitos y ofrecer soluciones personalizadas.
+            </p>
+        </div>
+    </header>
+
+    <nav class="bg-secondary shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:text-base">
+            <a href="#papeleria-corporativa" class="text-white hover:text-gray-200 font-medium transition duration-300 ease-in-out py-1 px-3 rounded-md hover:bg-blue-600">I. Papelería Corporativa</a>
+            <a href="#material-publicitario" class="text-white hover:text-gray-200 font-medium transition duration-300 ease-in-out py-1 px-3 rounded-md hover:bg-blue-600">II. Material Publicitario</a>
+            <a href="#servicios-especializados" class="text-white hover:text-gray-200 font-medium transition duration-300 ease-in-out py-1 px-3 rounded-md hover:bg-blue-600">III. Servicios Especializados</a>
+            <a href="#servicios-adicionales" class="text-white hover:text-gray-200 font-medium transition duration-300 ease-in-out py-1 px-3 rounded-md hover:bg-blue-600">IV. Servicios Adicionales</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- I. Papelería Corporativa y de Oficina -->
+        <section id="papeleria-corporativa" class="mb-16">
+            <h2 class="section-title">I. Papelería Corporativa y de Oficina</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjetas de Visita -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="tarjetas_visitas.png" alt="Varias tarjetas de visita con diferentes acabados y diseños, algunas troqueladas y con relieve" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Tarjetas de Visita</h3>
+                    <p class="service-description">Amplia variedad de tarjetas de visita con diversos tipos y acabados.</p>
+                    <ul class="service-features">
+                        <li>Tipos: clásicas, troqueladas, transparentes, imantadas, ecológicas, etc.</li>
+                        <li>Acabados: laminado (brillo/mate), puntas redondeadas</li>
+                        <li>Soportes variados: Ilustración, Couché, Opalina, Kraft</li>
+                    </ul>
+                </div>
+                <!-- Papel de Carta -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="papel_carta.png" alt="Pila de papel de carta con membrete corporativo y un diseño elegante" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Papel de Carta</h3>
+                    <p class="service-description">Papel de carta clásico o con membrete, con opciones de acabados especiales.</p>
+                    <ul class="service-features">
+                        <li>Opciones con Stamping Dorado o Plateado, y Gofrado</li>
+                        <li>Disponibles en tamaños A5 y A4</li>
+                    </ul>
+                </div>
+                <!-- Sobres -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="sobre.png" alt="Sobres de diferentes tamaños con logotipos y membretes, algunos con ventana" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Sobres</h3>
+                    <p class="service-description">Sobres con ventana, reciclados, Kraft, con logotipo y membretados.</p>
+                    <ul class="service-features">
+                        <li>Formatos C6, C5, C4, americanos</li>
+                    </ul>
+                </div>
+                <!-- Carpetas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="carpeta.jpg" alt="Carpetas corporativas abiertas mostrando documentos y un diseño profesional" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Carpetas</h3>
+                    <p class="service-description">Carpetas institucionales, corporativas, de presentación y con anillas.</p>
+                    <ul class="service-features">
+                        <li>Formatos A5, A4</li>
+                        <li>Portadocumentos y subcarpetas</li>
+                    </ul>
+                </div>
+                <!-- Calendarios -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="calendario.jpeg" alt="Varios calendarios de pared y de escritorio con diferentes diseños y encuadernaciones" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Calendarios</h3>
+                    <p class="service-description">Calendarios de pared, sobremesa, escritorio y bolsillo con diversas opciones de encuadernación.</p>
+                    <ul class="service-features">
+                        <li>Con espiral (Wire-O), faldilla, triangulares, perpetuo</li>
+                        <li>Variedad de tamaños y acabados</li>
+                    </ul>
+                </div>
+                <!-- Otros Productos de Oficina -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="accesorio.png" alt="Surtido de productos de oficina personalizados: blocs de notas, bolígrafos, sellos y agendas" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Otros Productos de Oficina</h3>
+                    <p class="service-description">Talonarios, blocs de notas, agendas personalizadas, diplomas, sellos, carnets y más.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- II. Material Publicitario y de Marketing -->
+        <section id="material-publicitario" class="mb-16">
+            <h2 class="section-title">II. Material Publicitario y de Marketing</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Flyers y Volantes -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="flayer.jpg" alt="Varios flyers y volantes con diferentes diseños y tamaños, algunos redondos y ovalados" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Flyers y Volantes</h3>
+                    <p class="service-description">Clásicos, redondos, ovalados y en diversos formatos para tu publicidad.</p>
+                    <ul class="service-features">
+                        <li>Formatos: A7, A6, A5, A4, A3, DL</li>
+                        <li>Materiales: Papel Ilustración Mate, Couché, reciclado</li>
+                        <li>Impresión a 1 o 2 lados</li>
+                    </ul>
+                </div>
+                <!-- Folletos (Dípticos y Trípticos) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="triptico.jpeg" alt="Folletos dípticos y trípticos abiertos mostrando información detallada y gráficos" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Folletos (Dípticos y Trípticos)</h3>
+                    <p class="service-description">Permiten agregar mucha información en un espacio compacto con plizados y distintos formatos.</p>
+                </div>
+                <!-- Carteles y Posters -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="cartel.png" alt="Grandes carteles y pósters publicitarios en diferentes tamaños y ubicaciones" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Carteles y Posters</h3>
+                    <p class="service-description">Todo tipo de carteles, incluyendo express, electorales, para eventos y XXL.</p>
+                    <ul class="service-features">
+                        <li>Amplia gama de formatos y tamaños personalizados</li>
+                        <li>Opciones: reposicionables, ignífugos, con dorso azul, etc.</li>
+                    </ul>
+                </div>
+                <!-- Pegatinas y Stickers -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="sticker.jpeg" alt="Varias pegatinas y stickers troquelados con formas personalizadas y diseños coloridos" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Pegatinas y Stickers</h3>
+                    <p class="service-description">Pegatinas de PVC, laminadas, troqueladas, transparentes, con gota de resina y más.</p>
+                    <ul class="service-features">
+                        <li>Adhesivos calcomanías</li>
+                        <li>Corte recto o troquelado personalizado</li>
+                        <li>Materiales: Adhesivo papel Imantado, Adhesivo Kraft imantado</li>
+                    </ul>
+                </div>
+                <!-- Etiquetas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="etiqueta.jpeg" alt="Etiquetas textiles y de papel para ropa y botellas, con diferentes diseños y materiales" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Etiquetas</h3>
+                    <p class="service-description">Etiquetas textiles, perforadas, para ropa y botellas en diversos soportes.</p>
+                    <ul class="service-features">
+                        <li>Papel Couché, Opalina, Kraft</li>
+                    </ul>
+                </div>
+                <!-- Imanes -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="imanes.jpg" alt="Imanes personalizados de nevera con diferentes formas y diseños" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Imanes</h3>
+                    <p class="service-description">Imanes personalizados de papel imantado o Kraft imantado, con corte recto.</p>
+                    <ul class="service-features">
+                        <li>Love Magnets, Pola Magnets, Square Magnets</li>
+                    </ul>
+                </div>
+                <!-- Pendones (Roll-ups y Banderas) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="roller.jpeg" alt="Roll-ups y banderas publicitarias en eventos al aire libre y en interiores" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Pendones (Roll-ups y Banderas)</h3>
+                    <p class="service-description">Con base retráctil y bolso de transporte, ideales para interiores y exteriores.</p>
+                    <ul class="service-features">
+                        <li>Materiales: Tela PVC, papel sintético</li>
+                        <li>Formatos: 80x200 cm, 100x200 cm</li>
+                        <li>Mini pendones, banderas de fibra de vidrio y aluminio</li>
+                    </ul>
+                </div>
+                <!-- Postales e Invitaciones -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="postal.jpeg" alt="Postales e invitaciones de boda y cumpleaños con diseños elegantes y personalizados" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Postales e Invitaciones</h3>
+                    <p class="service-description">Impresas a 1 o 2 lados, con corte recto, en diversos soportes.</p>
+                    <ul class="service-features">
+                        <li>Soportes: Couché, Opalina, Kraft</li>
+                    </ul>
+                </div>
+                <!-- Material para Restaurantes y Hoteles -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="cartamenu.jpeg" alt="Cartas de menú plastificadas, manteles individuales y posavasos en un restaurante elegante" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Material para Restaurantes y Hoteles</h3>
+                    <p class="service-description">Cartas Menú, manteles individuales, servilletas, posavasos y más.</p>
+                    <ul class="service-features">
+                        <li>Cartas Menú: plastificadas, desplegables, irrompibles</li>
+                        <li>Porta cuentas, porta cubiertos, collarín para botellas</li>
+                    </ul>
+                </div>
+                <!-- Otros Productos Publicitarios -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="otros.jpg" alt="Periódicos publicitarios, naipes personalizados y cuadros de lienzo en una exposición" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Otros Productos Publicitarios</h3>
+                    <p class="service-description">Periódicos publicitarios, naipes, mapas, entradas para eventos, cuadros y PLV.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- III. Servicios Especializados y de Acabado -->
+        <section id="servicios-especializados" class="mb-16">
+            <h2 class="section-title">III. Servicios Especializados y de Acabado</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Encuadernación Profesional -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="encuadernado.jpg" alt="Libros y documentos encuadernados profesionalmente con espiral, tapa dura y rústica" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Encuadernación Profesional</h3>
+                    <p class="service-description">Opciones como Espiral, Empastes (tapa dura y blanda), Hotmelt, Rústica, Wire’O, Binder Cosido.</p>
+                    <ul class="service-features">
+                        <li>Para informes, portafolios, tesis o libros</li>
+                    </ul>
+                </div>
+                <!-- Acabados Especiales -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="especial.jpg" alt="Muestras de impresiones con acabados especiales como barniz selectivo, gofrado y stamping caliente" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Acabados Especiales</h3>
+                    <p class="service-description">Barniz Selectivo (3D y Ultra brillante), Plastificado (Mate, Brillo, Soft Touch), Gofrado, Stamping Caliente y más.</p>
+                    <ul class="service-features">
+                        <li>Letterpress, Purpurina, Triplex, Metal Design</li>
+                        <li>Troquelado y Precorte, Microperforado, Abrochado Caballo</li>
+                    </ul>
+                </div>
+                <!-- Digitalización de Documentos -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="Digitalizacion.jpg" alt="Escáner de documentos de alta velocidad digitalizando una pila de papeles" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Digitalización de Documentos</h3>
+                    <p class="service-description">Servicio para escanear y convertir tus documentos físicos a formato digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IV. Servicios Adicionales -->
+        <section id="servicios-adicionales" class="mb-16">
+            <h2 class="section-title">IV. Servicios Adicionales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Diseño Gráfico y Soluciones Gráficas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="Soluciones.jpg" alt="Diseñador gráfico trabajando en una computadora con software de diseño, mostrando creatividad" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Diseño Gráfico y Soluciones Gráficas</h3>
+                    <p class="service-description">Servicios de diseño gráfico y asesoramiento en la preparación de archivos de impresión.</p>
+                    <ul class="service-features">
+                        <li>Ayuda en la creación de diseños personalizados</li>
+                        <li>Edición de Libros</li>
+                    </ul>
+                </div>
+                <!-- Asesoría y Atención al Cliente -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="asesoria.jpg" alt="Representante de atención al cliente hablando con un cliente, ofreciendo asesoramiento" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Asesoría y Atención al Cliente</h3>
+                    <p class="service-description">Orientación para definir tus necesidades, la mejor opción de impresión, materiales y acabados, y seguimiento del proyecto.</p>
+                </div>
+                <!-- Pruebas de Color y Dummy/Prototipo -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="prueba.jpeg" alt="Muestras de pruebas de color de impresión y un prototipo de producto final" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Pruebas de Color y Dummy/Prototipo</h3>
+                    <p class="service-description">Recomendamos hacer una prueba de impresión y un prototipo para verificar colores y visualizar el producto final.</p>
+                </div>
+                <!-- Entrega y Despacho -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="entrega.png" alt="Camioneta de reparto entregando paquetes de impresiones en una puerta" class="w-full h-48 object-cover rounded-md mb-4 shadow-md">
+                    <h3 class="service-title">Entrega y Despacho</h3>
+                    <p class="service-description">Servicio de delivery de impresiones con entregas rápidas y envíos a todo Chile.</p>
+                    <ul class="service-features">
+                        <li>Entregas rápidas (24-78 horas)</li>
+                        <li>Envíos a todo Chile (Starken o Chilexpress)</li>
+                        <li>Despacho puerta a puerta en la Región Metropolitana</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">&copy; 2025 IMPRESIONES DYG. Todos los derechos reservados.</p>
+            <p class="text-md">Tu destino para servicios de impresión y encuadernación de alta calidad.</p>
+
+            <div class="mt-6 text-left max-w-md mx-auto">
+                <h4 class="text-xl font-semibold mb-3">Contacto y Ubicación</h4>
+                <p class="mb-2"><strong>Ubicación:</strong> Barros Arana, Paillaco #736</p>
+                <p class="mb-2"><strong>Email:</strong> <a href="mailto:impresiones.dyg.23@gmail.com" class="text-white hover:underline">impresiones.dyg.23@gmail.com</a></p>
+                <p class="mb-2"><strong>Teléfono:</strong> <a href="tel:+56930050074" class="text-white hover:underline">+56 9 3005 0074</a></p>
+
+                <h4 class="text-xl font-semibold mt-4 mb-3">Redes Sociales</h4>
+                <div class="flex items-center justify-center md:justify-start space-x-4 mb-2">
+                    <a href="https://instagram.com/impresionesdyg23?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2A4.8 4.8 0 002.8 7.8v8.4c0 2.6 2.2 4.8 4.8 4.8h8.4a4.8 4.8 0 004.8-4.8V7.8a4.8 4.8 0 00-4.8-4.8H7.6zm9.6 1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 1100 6 3 3 0 000-6z"/>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61552137057946&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-200 transition-colors duration-300">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15h-2V12h2V9.5c0-2.2 1.35-3.4 3.3-3.4.94 0 1.78.07 2.02.1v2.2h-1.3c-1.1 0-1.65.67-1.65 1.65V12h3.3l-.53 3h-2.77v6.78c4.56-.93 8-4.96 8-9.82z"/>
+                        </svg>
+                        Facebook
+                    </a>
+                </div>
+
+                <h4 class="text-xl font-semibold mt-4 mb-3">Horarios de Atención</h4>
+                <ul class="list-none p-0">
+                    <li>Lunes: 09:00 - 18:00</li>
+                    <li>Martes: 09:00 - 18:00</li>
+                    <li>Miércoles: 09:00 - 18:00</li>
+                    <li>Jueves: 09:00 - 18:00</li>
+                    <li>Viernes: 09:00 - 18:00</li>
+                    <li>Sábado: 09:00 - 18:00</li>
+                    <li>Domingo: Cerrado</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
